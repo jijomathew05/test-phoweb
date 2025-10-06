@@ -1,32 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jijo's Photography</title>
-
-  <!-- Link to CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photopidia</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Jijo's Photography</h1>
-    <p class="tagline">Capturing stories through my lens</p>
-  </header>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">JM</div>
+        <div>
+          <h1>Photopidia</h1>
+          <p class="small muted">Photographer | Visual Storyteller</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <section class="gallery">
-    <div class="photo"><img src="Images/photo1.jpg" alt="photo1"></div>
-    <div class="photo"><img src="Images/photo2.jpg" alt="photo2"></div>
-    <div class="photo"><img src="Images/photo3.jpg" alt="photo3"></div>
-    <div class="photo"><img src="Images/photo4.jpg" alt="photo4"></div>
-    <div class="photo"><img src="Images/photo5.jpg" alt="photo5"></div>
-  </section>
+    <section id="home" class="hero">
+      <div class="intro">
+        <h2>Capture life. Frame moments.</h2>
+        <p class="muted">I shoot portraits, street, and moments that tell a quiet story. Replace this with your own tagline or bio later.</p>
+        <a class="btn" href="#contact">Hire / Contact</a>
+      </div>
+      <aside class="side card">
+        <h3>About this portfolio</h3>
+        <p class="muted small">Hey, I'm Jijo. I love capturing simple moments and turning them into quiet stories.</p>
+      </aside>
+    </section>
 
-  <footer>
-    <p>© 2025 Jijo Mathew | All rights reserved</p>
-  </footer>
+    <section id="about" class="about">
+      <div class="card">
+        <h2>About</h2>
+        <p class="muted small">This is the longer about section. Replace this paragraph with your story and photography style.</p>
+      </div>
+      <div class="card">
+        <h3>Contact</h3>
+        <p class="muted small">Send me a message using the form below.</p>
+        <form id="contact-form">
+          <input class="input" id="name" placeholder="Your name" required>
+          <input class="input" id="email" placeholder="Your email" type="email" required>
+          <textarea id="message" rows="4" placeholder="Message" required></textarea>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
 
-  <!-- Link to JavaScript -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <h3>Ooty</h3>
+      <div class="gallery">
+        <img src="images/photo2.jpg" alt="photo2" >
+        <img src="images/photo3.jpg" alt="photo3" class="wide">
+        <img src="images/photo4.jpg" alt="photo4" class="wide">
+        <img src="images/photo5.jpg" alt="photo5">
+      </div>
+    </section>
+
+    <footer>
+      <p class="small muted">© <span id="year"></span> Jijo Mathew</p>
+    </footer>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
